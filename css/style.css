@@ -4,8 +4,23 @@
   z-index: 5;
 }
 
-.navbar a {
+.navbar a,
+.navbar button {
   color: white;
+  -webkit-transition-property: font-size, color;
+  transition-property: font-size, color;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.navbar a:hover {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.navbar button:hover {
+  font-size: 1.1rem;
+  color: gray;
 }
 
 .text-red {
@@ -40,7 +55,7 @@ button {
 }
 
 .back-ani {
-  top: -267px;
+  top: -167px;
   -webkit-animation-name: circle;
           animation-name: circle;
   -webkit-animation-duration: 20s;
@@ -50,17 +65,15 @@ button {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   z-index: 3;
-  left: -300px;
+  left: -240px;
 }
 
 @-webkit-keyframes circle {
   from {
   }
   to {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: rotateZ(100deg) translateY(300px);
+            transform: rotateZ(100deg) translateY(300px);
   }
 }
 
@@ -68,10 +81,8 @@ button {
   from {
   }
   to {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: rotateZ(100deg) translateY(300px);
+            transform: rotateZ(100deg) translateY(300px);
   }
 }
 
@@ -180,13 +191,13 @@ footer .row-1 ul {
 }
 
 footer .row-1 .ul-1 {
-  margin-right: 27px;
-  margin-left: 45px;
+  margin-right: 21px;
+  margin-left: -24px;
 }
 
 footer .row-1 .icon {
   position: absolute;
-  left: 50%;
+  left: 642px;
   top: 30px;
   z-index: 4;
   background: black;
