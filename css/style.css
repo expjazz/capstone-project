@@ -229,4 +229,31 @@ footer ul {
   margin-top: 40px;
   list-style: none;
 }
+
+.ssection-1 .col-12 {
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ssection-1 .col-12 .input-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.ssection-1 .col-12 .input-groups label {
+  margin: 0 10px;
+}
 /*# sourceMappingURL=style.css.map */

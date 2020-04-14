@@ -206,3 +206,20 @@ footer {
     list-style: none;
   }
 }
+
+// search.html
+
+.ssection-1 .col-12 {
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  .input-groups {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 40px 0;
+    label {
+      margin: 0 10px;
+    }
+  }
+}
