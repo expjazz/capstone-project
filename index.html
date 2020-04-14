@@ -27,7 +27,7 @@
     <div class="container-max">
       <header class="header">
         <nav
-          class="navbar navbar-expand-md flex-column flex-md-row justify-content-between bg-light"
+          class="navbar navbar-expand-md flex-column flex-md-row justify-content-between"
         >
           <div class="nav-left">
             <a href="#"> <i class="fas fa-search"></i></a>
@@ -61,70 +61,160 @@
       </header>
       <div class="container-fluid">
         <section class="section-1">
-          <div class="jumbotron jumbotron-fluit">
-            <div class="container">
-              <h1 class="display-4">Find the perfect house</h1>
-              <form action="">
-                <div class="form-container d-flex flex-column">
-                  <div class="form-title-btn">
-                    <button class="btn btn-sm btn-primary">Rent</button>
-                    <button class="btn btn-sm btn-secondary">Buy</button>
-                  </div>
-                  <div class="input-1">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div class="input-container d-flex flex-column">
-                      <label for="city">City </label>s
-                      <input type="text" name="city" id="city" />
+          <div class="jumbotron jumbotron-fluit position-relative">
+            <div class="back-ani position-absolute">
+              <div class="img1">
+                <img src="./images/backanim1.svg" alt="" />
+              </div>
+            </div>
+            <div class="container text-center w-75">
+              <h1 class="display-4 text-white">Find the perfect house</h1>
+              <form action="" class="danger">
+                <div
+                  class="form-container d-flex flex-column text-center w-50 mx-auto"
+                >
+                  <div class="form-border border rounded text-left">
+                    <div class="input-1 d-flex">
+                      <i class="fas fa-map-marker-alt label-svg mr-3"></i>
+                      <div class="input-container input-group d-flex">
+                        <label for="city" class="text-white label-in w-100"
+                          >City
+                        </label>
+                        <div class="in w-75 pb-3">
+                          <input
+                            type="text"
+                            name="city"
+                            class="w-100 border-0 rounded"
+                            id="city"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-1 border-top d-flex">
+                      <i class="fas fa-map-marker-alt label-svg mr-3"></i>
+                      <div class="input-container input-group d-flex">
+                        <div class="item w-50 border-right">
+                          <label for="city" class="w-100 label-in text-white"
+                            >Neighborhood
+                          </label>
+                          <div class="in w-75 pb-3">
+                            <input
+                              type="text"
+                              name="city"
+                              class="w-100 border-0 rounded"
+                              id="city"
+                            />
+                          </div>
+                        </div>
+                        <div class="item input-group w-25 pl-2 border-right">
+                          <label for="price" class="w-100 text-white label-in"
+                            >Price-range
+                          </label>
+                          <div class="in w-100 pb-2">
+                            <select
+                              name="price"
+                              id=""
+                              class="custom-select h-75 py-0 border-0"
+                            >
+                              <option value="" class="selected">Chose</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="item input-group w-25 pl-2 pb-2">
+                          <label for="price" class="w-100 text-white label-in"
+                            >Price-range
+                          </label>
+                          <div class="in w-100">
+                            <select
+                              name="price"
+                              id=""
+                              class="custom-select h-75 py-0 border-0"
+                            >
+                              <option value="" class="selected">Chose</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                              <option value="">$1000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <button class="btn btn-lg mt-5 mb-2 btn-primary border-0">
+                    Find your dream home
+                  </button>
+                  <a href="#">Anounce your house</a>
                 </div>
               </form>
             </div>
           </div>
         </section>
         <section class="section-2">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="display-6 text-center text-red">
+                Dream home works like this
+              </h5>
+            </div>
+          </div>
           <div class="row justify-content-center">
             <div class="col-md-5">
-              <div class="item d-flex flex-column mx-auto align-items-center">
-                <a href="#" class="title"> <i class="fas fa-bars"></i></a>
-                <h5 class="h6 font-weight-bold subtitle">Search</h5>
-                <p class="lead text-center">
-                  It's Simple. On Buscar Academia's Homepage, Enter The Name Of
-                  A School You Are Looking For And Click On Search.
-                  Alternatively, Click On The Search Link On The Top Menu To
-                  View The List Of All Schools.
+              <div
+                class="item w-75 mt-5 d-flex flex-column mx-auto align-items-center mb-3"
+              >
+                <a href="#" class="title">
+                  <i class="far fa-newspaper text-red"></i
+                ></a>
+                <h5 class="h6 font-weight-bold subtitle my-3">1 - Search</h5>
+                <p class="lead text-center text-capitalize">
+                  It's Simple. On Buscar Academia's Homepage, Enter the city of
+                  your desired livelyhood, and then select your other
+                  preferences.
                 </p>
               </div>
-              <div class="item d-flex flex-column mx-auto align-items-center">
-                <a href="#" class="title"> <i class="fas fa-bars"></i></a>
-                <h5 class="h6 font-weight-bold subtitle">Search</h5>
-                <p class="lead text-center">
-                  It's Simple. On Buscar Academia's Homepage, Enter The Name Of
-                  A School You Are Looking For And Click On Search.
-                  Alternatively, Click On The Search Link On The Top Menu To
-                  View The List Of All Schools.
+              <div
+                class="item mb-3 w-75 d-flex flex-column mx-auto align-items-center"
+              >
+                <a href="#" class="title">
+                    <i class="far fa-file-alt text-red"></i></i
+                ></a>
+                <h5 class="h6 font-weight-bold my-3 subtitle">3 - Apply</h5>
+                <p class="lead text-center text-capitalize">
+                  Apply For Your Interview To The House Of Your Choice. Click On
+                  The APPLY Button To Get The Application Form. We Also Follow
+                  Up On The Application To Make Sure You Get A Reply On Time.
                 </p>
               </div>
             </div>
             <div class="col-md-5 justify-content-center">
-              <div class="item d-flex flex-column mx-auto align-items-center">
-                <a href="#" class="title"> <i class="fas fa-bars"></i></a>
-                <h5 class="h6 font-weight-bold subtitle">Search</h5>
-                <p class="lead text-center">
-                  It's Simple. On Buscar Academia's Homepage, Enter The Name Of
-                  A School You Are Looking For And Click On Search.
-                  Alternatively, Click On The Search Link On The Top Menu To
-                  View The List Of All Schools.
+              <div
+                class="item mb-3 mt-5 w-75 d-flex flex-column mx-auto align-items-center"
+              >
+                <a href="#" class="title">
+                  <i class="fas fa-map-marked-alt text-red"></i
+                ></a>
+                <h5 class="h6 my-3 font-weight-bold subtitle">2 - Locate</h5>
+                <p class="lead text-center text-capitalize">
+                  Get To See Where the desired house Is Located By Clicking On
+                  The house Profile. It's Even More Exciting. You Can Get The
+                  Directions From Anywhere In The Country
                 </p>
               </div>
-              <div class="item d-flex flex-column mx-auto align-items-center">
-                <a href="#" class="title"> <i class="fas fa-bars"></i></a>
-                <h5 class="h6 font-weight-bold subtitle">Search</h5>
-                <p class="lead text-center">
-                  It's Simple. On Buscar Academia's Homepage, Enter The Name Of
-                  A School You Are Looking For And Click On Search.
-                  Alternatively, Click On The Search Link On The Top Menu To
-                  View The List Of All Schools.
+              <div
+                class="item w-75 d-flex flex-column mx-auto align-items-center"
+              >
+                <a href="#" class="title">
+                  <i class="fas fa-umbrella-beach text-red"></i
+                ></a>
+                <h5 class="h6 font-weight-bold subtitle my-3">4 - Relax</h5>
+                <p class="lead text-center text-capitalize">
+                  Once Your lise Gets approved, You Can Now Relax. You Can Check
+                  Out Our Blog To See What We Recommend When School Hunting.
                 </p>
               </div>
             </div>
@@ -132,13 +222,13 @@
         </section>
         <section class="section-3">
           <div
-            class="row d-flex justify-content-between align-items-center bg-light"
+            class="row d-flex item item-1 justify-content-between align-items-center"
           >
             <div class="item d-flex flex-column">
-              <h5 class="h6 title">
+              <h5 class="h6 title font-weight-bold text-white">
                 Over 10,000 houses registered with us
               </h5>
-              <h6 class="text-muted">Find the houses of your dreams</h6>
+              <h6 class="text-white">Find the houses of your dreams</h6>
               <button class="btn btn-lg">Find a house</button>
             </div>
             <div class="img">
@@ -148,13 +238,13 @@
             </div>
           </div>
           <div
-            class="row d-flex justify-content-between aling-items-center bg-dark"
+            class="row d-flex item item-2 justify-content-between aling-items-center"
           >
             <div class="item d-flex flex-column">
-              <h5 class="h6 title">
+              <h5 class="h6 title font-weight-bold text-white">
                 Over 10,000 houses registered with us
               </h5>
-              <h6 class="text-muted">Find the houses of your dreams</h6>
+              <h6 class="text-white">Find the houses of your dreams</h6>
               <button class="btn btn-lg">Find a house</button>
             </div>
             <div class="img">
@@ -164,13 +254,13 @@
             </div>
           </div>
           <div
-            class="row d-flex justify-content-between align-items-center bg-light"
+            class="row d-flex item item-3 justify-content-between align-items-center"
           >
             <div class="item d-flex flex-column">
-              <h5 class="h6 title">
+              <h5 class="h6 title font-weight-bold text-white">
                 Over 10,000 houses registered with us
               </h5>
-              <h6 class="text-muted">Find the houses of your dreams</h6>
+              <h6 class="text-white">Find the houses of your dreams</h6>
               <button class="btn btn-lg">Find a house</button>
             </div>
             <div class="img">
@@ -183,8 +273,10 @@
         <section class="section-4">
           <div class="row">
             <div class="col-12">
-              <h5 class="h6">See houses in London</h5>
+              <h5 class="h6 text-center text-red my-5">See houses in London</h5>
             </div>
+        </div>
+            <div class="row">
             <div class="col-3">
               <div class="card">
                 <img src="./images/inside1.jpg" alt="" class="card-img-top" />
@@ -200,12 +292,12 @@
                       ><i class="fas-fa-bars"></i>4 bedrooms</small
                     >
                   </div>
-                  <div class="bottom d-flex">
+                  <div class="bottom d-flex justify-content-between">
                     <div class="left d-flex flex-column">
-                      <p>rent for $4000</p>
-                      <p>total for $5000</p>
+                      <small class="text-muted">rent for $4000</small>
+                        <p class="font-weight-bold">rent plus taxes for $5000</p>
                     </div>
-                    <div class="left d-flex">
+                    <div class="left d-flex align-self-center">
                       <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
                     </div>
                   </div>
@@ -227,12 +319,12 @@
                       ><i class="fas-fa-bars"></i>4 bedrooms</small
                     >
                   </div>
-                  <div class="bottom d-flex">
+                  <div class="bottom d-flex justify-content-between">
                     <div class="left d-flex flex-column">
-                      <p>rent for $4000</p>
-                      <p>total for $5000</p>
+                      <small class="text-muted">rent for $4000</small>
+                        <p class="font-weight-bold">rent plus taxes for $5000</p>
                     </div>
-                    <div class="left d-flex">
+                    <div class="left d-flex align-self-center">
                       <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
                     </div>
                   </div>
@@ -254,12 +346,12 @@
                       ><i class="fas-fa-bars"></i>4 bedrooms</small
                     >
                   </div>
-                  <div class="bottom d-flex">
+                  <div class="bottom d-flex justify-content-between">
                     <div class="left d-flex flex-column">
-                      <p>rent for $4000</p>
-                      <p>total for $5000</p>
+                      <small class="text-muted">rent for $4000</small>
+                        <p class="font-weight-bold">rent plus taxes for $5000</p>
                     </div>
-                    <div class="left d-flex">
+                    <div class="left d-flex align-self-center">
                       <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
                     </div>
                   </div>
@@ -281,12 +373,12 @@
                       ><i class="fas-fa-bars"></i>4 bedrooms</small
                     >
                   </div>
-                  <div class="bottom d-flex">
+                  <div class="bottom d-flex justify-content-between">
                     <div class="left d-flex flex-column">
-                      <p>rent for $4000</p>
-                      <p>total for $5000</p>
+                      <small class="text-muted">rent for $4000</small>
+                        <p class="font-weight-bold">rent plus taxes for $5000</p>
                     </div>
-                    <div class="left d-flex">
+                    <div class="left d-flex align-self-center">
                       <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
                     </div>
                   </div>
@@ -296,8 +388,8 @@
           </div>
         </section>
         <footer class="footer">
-          <div class="row mt-5 justify-content-center">
-            <ul class="border-top border-bottom d-flex">
+          <div class="row row-1 mt-5 justify-content-center">
+            <ul class="border-top border-bottom d-flex ul-1">
               <li class="py-3 mr-3">
                 <a href="#">HOME</a>
               </li>
@@ -312,7 +404,7 @@
               </li>
             </ul>
             <div class="icon">
-              <i class="fas fa-map-marker-alt border rounded-circle"></i>
+              <i class="fas fa-map-marker-alt border-0"></i>
             </div>
             <ul class="border-top border-bottom d-flex">
               <li class="py-3 mr-3">
@@ -329,9 +421,9 @@
               </li>
             </ul>
           </div>
-          <div class="row mt-3">
-            <div class="col-4 d-flex flex-column">
-              <a href="#"> <h5 class="h6">Subscribe</h5> </a>
+          <div class="row row-2 justify-content-around mt-3">
+            <div class="col-4 d-flex text-center flex-column">
+               <h5 class="h6">Subscribe</h5> 
               <div class="input-group">
                 <input
                   type="email"
@@ -343,19 +435,19 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex flex-column">
-              <a href="#" class="font-weight-bold">Contact</a>
+            <div class="col-4 d-flex text-center flex-column">
+              <a href="#" class="font-weight-bold"><h5 class="h6">Contact</h5></a>
               <a href="#">
                 Have a question?
               </a>
-              <a href="#">info@search_houses.com</a>
+              <a href="#" class="text-red">info@search_houses.com</a>
             </div>
-            <div class="col-4 d-flex flex-column">
-              <h5 class="h6">About</h5>
+            <div class="col-4 d-flex text-center flex-column">
+            <a href="#">  <h5 class="h6">About</h5> </a>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                 nobis et quas atque molestias autem inventore quae dolore
-                distinctio ea.
+                distinctio ea. <a href="#" class="text-red">Lear more...</a>
               </p>
             </div>
           </div>

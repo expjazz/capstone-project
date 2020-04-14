@@ -1,4 +1,221 @@
-.input-container {
+.navbar {
+  background: #dc3545;
+  color: white;
+  z-index: 5;
+}
+
+.navbar a {
+  color: white;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
+button {
+  background: #dc3545 !important;
+}
+
+.jumbotron {
+  background: linear-gradient(-8deg, rgba(253, 253, 253, 0) 0%, rgba(27, 3, 1, 0.253) 40%, rgba(251, 66, 38, 0) 100%), url(/images/backmain.jpg);
+  background-size: cover;
+  height: 490px;
+}
+
+.jumbotron .container {
+  z-index: 5;
+}
+
+.jumbotron input {
+  background: rgba(255, 255, 255, 0.664);
+}
+
+.jumbotron select {
+  background: rgba(255, 255, 255, 0.664);
+  width: 90%;
+}
+
+.jumbotron a {
+  color: #dc3545;
+}
+
+.back-ani {
+  top: -267px;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  z-index: 3;
+  left: -300px;
+}
+
+@-webkit-keyframes circle {
+  from {
+  }
+  to {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes circle {
+  from {
+  }
+  to {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.label-in {
+  font-size: 14px;
+}
+
+.label-svg {
+  font-size: 8px;
+}
+
+.text-white {
+  color: white;
+}
+
+.section-2 .item {
+  background: white;
+}
+
+.section-2 .item p {
+  font-size: 14px;
+}
+
+.section-2 svg {
+  font-size: 30px;
+}
+
+svg {
+  font-size: 30px;
+}
+
+.section-3 .item {
+  padding: 0 10px;
+  margin: auto 0;
+}
+
+.section-3 .item button {
+  background: white !important;
+  color: transparent !important;
+}
+
+.section-3 img {
+  height: 330px;
+  padding: 10px 0;
+}
+
+.section-3 .item-1 {
+  background: #e27f64;
+}
+
+.section-3 .item-1 button {
+  color: #e27f64 !important;
+}
+
+.section-3 .item-2 {
+  background: #97a5a6;
+}
+
+.section-3 .item-2 button {
+  color: #97a5a6 !important;
+}
+
+.section-3 .item-3 {
+  background: #519bd7;
+}
+
+.section-3 .item-3 button {
+  color: #519bd7 !important;
+}
+
+.section-4 .card .font-weight-bold {
+  margin: 10px 0;
+}
+
+.section-4 .card .meters {
+  margin-top: 15px;
+}
+
+.section-4 .card .bottom {
+  margin-top: 15px;
+}
+
+.section-4 .card .bottom svg {
+  margin: 0px 15px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 7px;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding-top: 5px 0 0 0;
+  margin: 0 0 0 0;
+}
+
+footer .row-1 {
   position: relative;
+  border-color: gray !important;
+}
+
+footer .row-1 ul {
+  border-color: gray !important;
+}
+
+footer .row-1 .ul-1 {
+  margin-right: 27px;
+  margin-left: 45px;
+}
+
+footer .row-1 .icon {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  z-index: 4;
+  background: black;
+  border: solid;
+  border-radius: 50%;
+  border-color: gray !important;
+}
+
+footer .row-1 .icon svg {
+  font-size: 5rem;
+  padding: 20px;
+}
+
+footer .row-2 h5 {
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+footer .social-links {
+  background: #363434;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  margin-top: 40px;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
