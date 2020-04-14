@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      defer
+    ></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,8 +23,55 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container-max">
+      <header class="header">
+        <nav
+          class="navbar navbar-expand-md flex-column flex-md-row justify-content-between bg-light"
+        >
+          <div class="nav-left">
+            <a href="#"> <i class="fas fa-search"></i></a>
+            <a href="#" class="navbar-brand">Houses for rent</a>
+          </div>
+          <div class="nav-right">
+            <ul class="navbar-nav flex-row w-100">
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </li>
 
+              <li class="nav-item"><a href="#" class="nav-link">Houses</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </li>
+
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </li>
+
+              <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+              </li>
+
+              <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluit">
+          <div class="container">
+            <h1 class="display-4">Find the perfect house</h1>
+            <div class="input-group">
+              <input type="text" class="form-control" />
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button">Love it!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
