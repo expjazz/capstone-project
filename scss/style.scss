@@ -8,16 +8,15 @@ $dark-red: #dc3545;
   button {
     color: white;
 
-    transition-property: font-size, color;
-    transition-duration: 3s;
+    transition-property: font-size, font-weight;
+    transition-duration: 0.9ms;
   }
   a:hover {
     font-size: 1.1rem;
-    color: gray;
+    font-weight: bolder;
   }
   button:hover {
     font-size: 1.1rem;
-    color: gray;
   }
 }
 
@@ -210,9 +209,11 @@ footer {
 // search.html
 
 .ssection-1 .col-12 {
-  background: gray;
+  background: #d3d5da;
   display: flex;
   flex-direction: column;
+  margin: 50px 0;
+  padding: 30px 0;
   .input-groups {
     display: flex;
     flex-wrap: nowrap;
@@ -220,6 +221,46 @@ footer {
     margin: 40px 0;
     label {
       margin: 0 10px;
+    }
+  }
+  .bt-top {
+    #b1 {
+      border: 1px solid #007bff;
+    }
+    #b2 {
+      border: 1px solid #d67d17;
+    }
+    button {
+      margin: 10px 0;
+      background: transparent !important;
+    }
+  }
+  .bottom-bt {
+    .b1 {
+      background: #457eb4 !important;
+    }
+    .b2 {
+      background: #e2a044 !important;
+    }
+  }
+}
+
+.ssection-2 .card-body {
+  .bottom {
+    margin-top: 5px;
+    svg {
+      margin: 0px 7px;
+      color: gray;
+      border: 1px solid gray;
+      border-radius: 50%;
+      font-size: 2rem;
+      padding: 7px;
+      transition-property: background font-size;
+      transition-duration: 1s;
+    }
+    svg:hover {
+      background: #97a5a6;
+      font-size: 2.2rem;
     }
   }
 }

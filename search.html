@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      defer
+    ></script>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -18,7 +22,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container-max">
+    <div class="container-fluid">
       <header class="header">
         <nav
           class="navbar navbar-expand-md flex-column flex-md-row justify-content-between"
@@ -87,6 +91,10 @@
             <div class="search-words text-center">
               Filter By Name, Grade Level, Type, Gender, Age:-
             </div>
+            <div class="buttons bt-top text-center">
+              <button class="btn" id="b1">House</button>
+              <button class="btn" id="b2">Condo</button>
+            </div>
             <div class="input-groups text-center">
               <label for="city">
                 City
@@ -118,13 +126,260 @@
                 </select></label
               >
             </div>
-            <div class="buttons text-center">
-              <button class="btn">Search</button>
-              <button class="btn">Clear filters</button>
+            <div class="input-groups text-center">
+              <label for="baths"
+                >Bathroom Number
+                <select name="" id="baths" class="custom-select">
+                  <option value="" class="selected">Choose</option>
+                  <option value="">One</option>
+                  <option value="">Two</option>
+                </select>
+              </label>
+              <label for="pool-area">
+                Pool Area
+                <select name="" id="pool-area" class="custom-select">
+                  <option value="" class="selected">Choose</option>
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+              </label>
+
+              <label for="pets"
+                >Pets allowed
+                <select name="" id="pets" class="custom-select">
+                  <option value="" class="selected">Choose...</option>
+                  <option value="">One</option>
+                  <option value="">One</option>
+                  <option value="">One</option>
+                  <option value="">One</option>
+                </select></label
+              >
+              <label for="square-meters"
+                >Square-Meters
+                <select name="" id="square-meters" class="custom-select">
+                  <option value="" class="selected">Choose...</option>
+                  <option value="">$10000</option>
+                  <option value="">$10000</option>
+                  <option value="">$10000</option>
+                  <option value="">$10000</option>
+                  <option value="">$10000</option>
+                </select></label
+              >
+            </div>
+            <div class="buttons bottom-bt text-center">
+              <button class="btn b1">Search</button>
+              <button class="btn b2">Clear filters</button>
             </div>
           </div>
         </div>
       </div>
+      <div class="ssection-2">
+        <div class="row">
+          <div class="col-12">
+            <h5 class="h4 my-3 text-red text-center">
+              Search Results Found 6 Houses
+            </h5>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0">
+              <a href="#">
+                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              </a>
+              <div class="card-body">
+                <div class="bottom d-flex justify-content-between">
+                  <div class="left d-flex flex-column">
+                    <small class="text-muted">$4000</small>
+                    <p class="font-weight-bold">221B, Baker Street</p>
+                  </div>
+                  <div class="right d-flex align-self-center">
+                    <a href="#"> <i class="fas fa-trash"></i> </a>
+                    <a href="#"> <i class="far fa-heart"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="row row-1 mt-5 justify-content-center">
+          <ul class="border-top border-bottom d-flex ul-1">
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+          </ul>
+          <div class="icon">
+            <i class="fas fa-map-marker-alt border-0"></i>
+          </div>
+          <ul class="border-top border-bottom d-flex">
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+            <li class="py-3 mr-3">
+              <a href="#">HOME</a>
+            </li>
+          </ul>
+        </div>
+        <div class="row row-2 justify-content-around mt-3">
+          <div class="col-4 d-flex text-center flex-column">
+            <h5 class="h6">Subscribe</h5>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="youremail@example.com"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-succes">Send</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex text-center flex-column">
+            <a href="#" class="font-weight-bold"><h5 class="h6">Contact</h5></a>
+            <a href="#">
+              Have a question?
+            </a>
+            <a href="#" class="text-red">info@search_houses.com</a>
+          </div>
+          <div class="col-4 d-flex text-center flex-column">
+            <a href="#"> <h5 class="h6">About</h5> </a>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis
+              et quas atque molestias autem inventore quae dolore distinctio ea.
+              <a href="#" class="text-red">Lear more...</a>
+            </p>
+          </div>
+        </div>
+        <div class="row social-links justify-content-between">
+          <div class="left">
+            <a href="#" class="align-text-top"
+              ><i
+                class="fab mr-2 align-text-top fa-facebook-square"
+                id="facebook"
+              ></i
+            ></a>
+            <a href="# " class="align-text-top"
+              ><i class="fab mr-2 align-text-top fa-twitter"></i
+            ></a>
+            <a href="# " class="align-text-top"
+              ><i class="fab mr-2 align-text-top fa-instagram"></i
+            ></a>
+            <a href="# " class="align-text-top"
+              ><i class="fab mr-2 align-text-top fa-tumblr"></i
+            ></a>
+            <a href="# " class="align-text-top"
+              ><i class="fab mr-2 align-text-top fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="right">
+            <a href="#">BUSCAR ACADEMIAS 2020. ALL RIGHTS RESERVED.</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
