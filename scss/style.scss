@@ -268,6 +268,23 @@ footer {
   }
 }
 
+.sssection-1 {
+  .wrapper {
+    height: 600px;
+    .img {
+      height: 50%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .carousel {
+    img {
+      height: 600px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .jumbotron {
     height: unset;

@@ -305,6 +305,22 @@ footer ul {
   font-size: 2.2rem;
 }
 
+.sssection-1 .wrapper {
+  height: 600px;
+}
+
+.sssection-1 .wrapper .img {
+  height: 50%;
+}
+
+.sssection-1 .wrapper .img img {
+  height: 100%;
+}
+
+.sssection-1 .carousel img {
+  height: 600px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .jumbotron {
     height: unset;
