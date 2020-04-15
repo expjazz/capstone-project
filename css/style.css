@@ -90,7 +90,11 @@ button {
 }
 
 .label-svg {
-  font-size: 8px;
+  font-size: 18px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 .text-white {
@@ -299,5 +303,27 @@ footer ul {
 .ssection-2 .card-body .bottom svg:hover {
   background: #97a5a6;
   font-size: 2.2rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .jumbotron {
+    height: unset;
+  }
+  .jumbotron .label-svg {
+    font-size: 4rem !important;
+  }
+  .jumbotron .input-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jumbotron .input-container .item {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .jumbotron .input-container .item select {
+    width: 75% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
