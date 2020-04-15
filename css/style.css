@@ -473,6 +473,28 @@ footer ul {
   margin-right: 59px;
 }
 
+.wrapper {
+  color: white;
+}
+
+.wrapper .img-logo {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .nav-right svg {
     margin-right: 30px;
@@ -561,7 +583,7 @@ footer ul {
   width: 80%;
 }
 
-.sssection-2 .grid {
+.input-groups .sssection-2 .grid {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
