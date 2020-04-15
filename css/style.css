@@ -1,3 +1,11 @@
+body {
+  font-family: "EB Garamond", serif;
+}
+
+.title {
+  font-family: "EB Garamond", serif;
+}
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -51,10 +59,6 @@ button {
   z-index: 5;
 }
 
-.jumbotron .container h1 {
-  white-space: nowrap;
-}
-
 .jumbotron .container svg {
   color: white;
   margin: 7px 10px 0 7px;
@@ -67,7 +71,7 @@ button {
 .jumbotron select {
   background: rgba(255, 255, 255, 0.664);
   width: 90%;
-  font-size: 23px;
+  line-height: 35px;
 }
 
 .jumbotron select option {
@@ -76,38 +80,6 @@ button {
 
 .jumbotron a {
   color: #dc3545;
-}
-
-.back-ani {
-  top: -167px;
-  -webkit-animation-name: circle;
-          animation-name: circle;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  z-index: 3;
-  left: -240px;
-}
-
-@-webkit-keyframes circle {
-  from {
-  }
-  to {
-    -webkit-transform: rotateZ(100deg) translateY(300px);
-            transform: rotateZ(100deg) translateY(300px);
-  }
-}
-
-@keyframes circle {
-  from {
-  }
-  to {
-    -webkit-transform: rotateZ(100deg) translateY(300px);
-            transform: rotateZ(100deg) translateY(300px);
-  }
 }
 
 .label-in {
@@ -155,6 +127,7 @@ svg {
 .section-3 img {
   height: 330px;
   padding: 10px 0;
+  width: 450px;
 }
 
 .section-3 .item-1 {
@@ -473,6 +446,7 @@ footer ul {
   .section-3 img {
     height: 200px;
     padding: 10px 0;
+    width: 300px;
   }
   .svg-cont {
     margin-left: -30px;
@@ -513,7 +487,8 @@ footer ul {
             order: -3;
   }
   .section-3 .item .img img {
-    height: 130px;
+    height: 183px;
+    width: 246px;
   }
   .section-4 .card img {
     width: 65% !important;

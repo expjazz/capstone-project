@@ -1,4 +1,14 @@
 $dark-red: #dc3545;
+$main-font: "EB Garamond", serif;
+$title-font: "EB Garamond", serif;
+
+body {
+  font-family: $main-font;
+}
+
+.title {
+  font-family: $title-font;
+}
 
 .container-fluid {
   padding-left: 0 !important;
@@ -45,9 +55,7 @@ button {
   background-size: cover;
   .container {
     z-index: 5;
-    h1 {
-      white-space: nowrap;
-    }
+
     svg {
       color: white;
       margin: 7px 10px 0 7px;
@@ -60,31 +68,13 @@ button {
   select {
     background: rgba(255, 255, 255, 0.664);
     width: 90%;
-    font-size: 23px;
+    line-height: 35px;
     option {
       font-size: 14px;
     }
   }
   a {
     color: $dark-red;
-  }
-}
-
-.back-ani {
-  top: -167px;
-  animation-name: circle;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  z-index: 3;
-  left: -240px;
-}
-
-@keyframes circle {
-  from {
-  }
-  to {
-    transform: rotateZ(100deg) translateY(300px);
   }
 }
 
@@ -131,6 +121,7 @@ svg {
   img {
     height: 330px;
     padding: 10px 0;
+    width: 450px;
   }
   .item-1 {
     background: #e27f64;
@@ -411,6 +402,7 @@ footer {
     img {
       height: 200px;
       padding: 10px 0;
+      width: 300px;
     }
   }
 
@@ -445,7 +437,8 @@ footer {
     .img {
       order: -3;
       img {
-        height: 130px;
+        height: 183px;
+        width: 246px;
       }
     }
   }
