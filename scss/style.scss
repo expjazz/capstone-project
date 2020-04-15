@@ -270,7 +270,7 @@ footer {
 
 .sssection-1 {
   .wrapper {
-    height: 600px;
+    height: 500px;
     .img {
       height: 50%;
       img {
@@ -280,7 +280,26 @@ footer {
   }
   .carousel {
     img {
-      height: 600px;
+      height: 500px;
+    }
+  }
+}
+
+.sssection-2 {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 40px;
+    margin: 90px auto;
+    grid-gap: 20px;
+    svg {
+      transition: color font-size;
+      transition-duration: 1s;
+      margin-right: 10px;
+    }
+    svg:hover {
+      color: $dark-red;
+      font-size: 1.1rem;
     }
   }
 }
@@ -301,5 +320,8 @@ footer {
         }
       }
     }
+  }
+  .sssection-2 .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
