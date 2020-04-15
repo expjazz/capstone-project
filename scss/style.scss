@@ -1,5 +1,11 @@
 $dark-red: #dc3545;
 
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  overflow: hidden;
+}
+
 .navbar {
   background: $dark-red;
   color: white;
@@ -8,12 +14,12 @@ $dark-red: #dc3545;
   button {
     color: white;
 
-    transition-property: font-size, font-weight;
-    transition-duration: 0.9ms;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
   }
   a:hover {
     font-size: 1.1rem;
-    font-weight: bolder;
   }
   button:hover {
     font-size: 1.1rem;
@@ -39,6 +45,13 @@ button {
   background-size: cover;
   .container {
     z-index: 5;
+    h1 {
+      white-space: nowrap;
+    }
+    svg {
+      color: white;
+      margin: 7px 10px 0 7px;
+    }
   }
   height: 490px;
   input {
@@ -47,6 +60,10 @@ button {
   select {
     background: rgba(255, 255, 255, 0.664);
     width: 90%;
+    font-size: 23px;
+    option {
+      font-size: 14px;
+    }
   }
   a {
     color: $dark-red;
@@ -137,6 +154,7 @@ svg {
 }
 
 .section-4 .card {
+  margin-top: 30px;
   .font-weight-bold {
     margin: 10px 0;
   }
@@ -152,6 +170,11 @@ svg {
       border-radius: 50%;
       font-size: 2rem;
       padding: 7px;
+      transition-property: background;
+      transition-duration: 1s;
+    }
+    svg:hover {
+      background: rgba(168, 163, 163, 0.705);
     }
   }
 }
@@ -160,23 +183,24 @@ footer {
   background: black;
   color: white;
 
-  padding-top: 5px 0 0 0;
   margin: 0 0 0 0;
   .row-1 {
-    position: relative;
+    padding: 0 40px;
+
     border-color: gray !important;
     ul {
       border-color: gray !important;
     }
     .ul-1 {
-      margin-right: 21px;
-      margin-left: -24px;
+      position: relative;
+      margin-right: 25px;
+      margin-left: 0;
     }
     .icon {
       position: absolute;
-      left: 642px;
+      left: -34px;
 
-      top: 30px;
+      top: -20px;
       z-index: 4;
       background: black;
       border: solid;
@@ -190,6 +214,8 @@ footer {
     }
   }
   .row-2 {
+    padding: 0 40px;
+
     h5 {
       font-weight: bolder;
       margin-bottom: 20px;
@@ -199,6 +225,7 @@ footer {
   .social-links {
     background: rgb(54, 52, 52);
     color: white;
+    padding: 0 30px;
   }
   a {
     color: white;
@@ -304,7 +331,13 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .navbar {
+    .hidden {
+      display: none;
+    }
+  }
+
   .jumbotron {
     height: unset;
     .label-svg {
@@ -321,7 +354,50 @@ footer {
       }
     }
   }
+
+  .section-3 {
+    img {
+      height: 200px;
+      padding: 10px 0;
+    }
+  }
+
+  .svg-cont {
+    margin-left: -30px;
+  }
   .sssection-2 .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-right {
+    svg {
+      margin-right: 30px;
+    }
+  }
+  .jumbotron {
+    padding-top: 10rem !important;
+  }
+  .section-3 .item {
+    flex-direction: column;
+    align-items: center;
+    .img {
+      order: -3;
+      img {
+        height: 130px;
+      }
+    }
+  }
+  .section-4 .card img {
+    width: 65% !important;
+  }
+
+  .footer ul {
+    border: none !important;
+    .icon {
+      top: 59px;
+      left: -120px;
+    }
   }
 }
