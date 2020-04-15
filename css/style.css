@@ -13,8 +13,10 @@
 .navbar a,
 .navbar button {
   color: white;
-  -webkit-transition-property: font-size;
-  transition-property: font-size;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   -webkit-transition-timing-function: ease-in-out;
@@ -22,11 +24,13 @@
 }
 
 .navbar a:hover {
-  font-size: 1.1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .navbar button:hover {
-  font-size: 1.1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .text-red {
@@ -371,35 +375,35 @@ footer ul {
   font-size: 2.2rem;
 }
 
-.item-1 {
+.search-in .item-1 {
   width: 20%;
 }
 
-.item-2 {
+.search-in .item-2 {
   width: 25%;
 }
 
-.item-3 {
+.search-in .item-3 {
   width: 10%;
 }
 
-.item-4 {
+.search-in .item-4 {
   width: 10%;
 }
 
-.item-5 {
+.search-in .item-5 {
   width: 15%;
 }
 
-.item-6 {
+.search-in .item-6 {
   width: 15%;
 }
 
-.item-7 {
+.search-in .item-7 {
   width: 15%;
 }
 
-.item-8 {
+.search-in .item-8 {
   width: 15%;
 }
 
@@ -413,6 +417,7 @@ footer ul {
 
 .sssection-1 .wrapper .img img {
   height: 100%;
+  width: 100%;
 }
 
 .sssection-1 .carousel img {
@@ -478,6 +483,14 @@ footer ul {
   }
 }
 
+.color-bg {
+  background: #dc3545;
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  padding: 101px;
+  margin-right: 59px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-right svg {
     margin-right: 30px;
@@ -519,29 +532,33 @@ footer ul {
   .ssection-1 {
     margin-top: 40px;
   }
-  .item-1 {
+  .input-groups .item-1 {
     width: 80%;
   }
-  .item-2 {
+  .input-groups .item-2 {
     width: 80%;
   }
-  .item-3 {
+  .input-groups .item-3 {
     width: 80%;
   }
-  .item-4 {
+  .input-groups .item-4 {
     width: 80%;
   }
-  .item-5 {
+  .input-groups .item-5 {
     width: 80%;
   }
-  .item-6 {
+  .input-groups .item-6 {
     width: 80%;
   }
-  .item-7 {
+  .input-groups .item-7 {
     width: 80%;
   }
-  .item-8 {
+  .input-groups .item-8 {
     width: 80%;
+  }
+  .sssection-2 .grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */

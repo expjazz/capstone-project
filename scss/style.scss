@@ -14,15 +14,15 @@ $dark-red: #dc3545;
   button {
     color: white;
 
-    transition-property: font-size;
+    transition-property: box-shadow;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
   }
   a:hover {
-    font-size: 1.1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
   button:hover {
-    font-size: 1.1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -317,31 +317,35 @@ footer {
     }
   }
 }
-.item-1 {
-  width: 20%;
-}
-.item-2 {
-  width: 25%;
-}
-.item-3 {
-  width: 10%;
-}
-.item-4 {
-  width: 10%;
+
+.search-in {
+  .item-1 {
+    width: 20%;
+  }
+  .item-2 {
+    width: 25%;
+  }
+  .item-3 {
+    width: 10%;
+  }
+  .item-4 {
+    width: 10%;
+  }
+
+  .item-5 {
+    width: 15%;
+  }
+  .item-6 {
+    width: 15%;
+  }
+  .item-7 {
+    width: 15%;
+  }
+  .item-8 {
+    width: 15%;
+  }
 }
 
-.item-5 {
-  width: 15%;
-}
-.item-6 {
-  width: 15%;
-}
-.item-7 {
-  width: 15%;
-}
-.item-8 {
-  width: 15%;
-}
 .sssection-1 {
   .wrapper {
     height: 500px;
@@ -349,6 +353,7 @@ footer {
       height: 50%;
       img {
         height: 100%;
+        width: 100%;
       }
     }
   }
@@ -417,6 +422,14 @@ footer {
   }
 }
 
+.color-bg {
+  background: #dc3545;
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  padding: 101px;
+  margin-right: 59px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-right {
     svg {
@@ -457,30 +470,34 @@ footer {
   .ssection-1 {
     margin-top: 40px;
   }
+  .input-groups {
+    .item-1 {
+      width: 80%;
+    }
+    .item-2 {
+      width: 80%;
+    }
+    .item-3 {
+      width: 80%;
+    }
+    .item-4 {
+      width: 80%;
+    }
 
-  .item-1 {
-    width: 80%;
+    .item-5 {
+      width: 80%;
+    }
+    .item-6 {
+      width: 80%;
+    }
+    .item-7 {
+      width: 80%;
+    }
+    .item-8 {
+      width: 80%;
+    }
   }
-  .item-2 {
-    width: 80%;
-  }
-  .item-3 {
-    width: 80%;
-  }
-  .item-4 {
-    width: 80%;
-  }
-
-  .item-5 {
-    width: 80%;
-  }
-  .item-6 {
-    width: 80%;
-  }
-  .item-7 {
-    width: 80%;
-  }
-  .item-8 {
-    width: 80%;
+  .sssection-2 .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -7,10 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
-      defer
-    ></script>
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -20,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Hello, world!</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <div class="container-max">
@@ -87,209 +84,83 @@
                 ></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hidden">Sign-up</a>
+                <a href="./sign-up.html" class="nav-link hidden">Sign-up</a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
       <div class="container-fluid">
-        <div class="row sssection-1 p-5 mt-5">
-          <div class="col-12">
-            <h5 class="h3 text-red my-3">Beautiful house close to the lake</h5>
-          </div>
-          <div class="col-lg-7 col-md-12">
-            <div
-              class="carousel slide"
-              data-ride="carousel"
-              id="carouselExampleControls"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./images/interior1.jpg"
-                    alt=""
-                    class="d-block w-100"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./images/interior2.jpg"
-                    alt=""
-                    class="d-bloc w-100"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./images/interior3.jpg"
-                    alt=""
-                    class="d-block w-100"
-                  />
-                </div>
+        <div class="wrapper mt-5">
+          <div class="row pt-5">
+            <div class="col-3">
+              <div class="img-logo">
+                <img src="" alt="" />
               </div>
-              <a
-                href="#carouselExampleControls"
-                class="carousel-control-prev"
-                role="button"
-                data-slide="prev"
-              >
-                <span class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                href="#carouselExampleControls"
-                class="carousel-control-next"
-                role="button"
-                data-slide="next"
-              >
-                <span class="carousel-control-next-icon"></span>
-                <span class="sr-only"></span
-              ></a>
+              <h5 class="h3">Welcome</h5>
+              <button class="btn">Login</button>
             </div>
-          </div>
-
-          <div class="col-lg-5 d-lg-block d-none">
-            <div class="wrapper">
-              <div class="img">
-                <img
-                  src="./images/interions1.jpg"
-                  alt=""
-                  class="img-thumbnail"
-                />
-              </div>
-              <div class="img">
-                <img
-                  src="./images/interiors2.jpg"
-                  alt=""
-                  class="img-thumbnail"
-                />
+            <div class="col-9">
+              <div class="color-bg">
+                <div class="row">
+                  <h5 class="h3">Fill the form to sing up</h5>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="first-name">First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="first-name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                      <small class="form-text text-muted">
+                        We will never share your data
+                      </small>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="password"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="conf-pass">Confirm your password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="conf-pass"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <section class="sssection-2">
-          <div class="row">
-            <div class="col-12">
-              <h5 class="h3 text-red text-center">221B. Baker Street</h5>
-            </div>
-          </div>
-          <div class="row grid">
-            <div class="item d-flex">
-              <i class="fas fa-ruler-horizontal"></i>
-              <span>200 squared meters</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-bed"></i>
-              <span>4 bedrooms</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-shower"></i>
-              <span>3 bathrooms</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-car"></i>
-              <span>Big garage</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-couch"></i>
-              <span>Furnished</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-subway"></i>
-              <span>Close to the subway Station</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-volume-mute"></i>
-              <span>Peacefull neighborhood</span>
-            </div>
-            <div class="item d-flex">
-              <i class="fas fa-mountain"></i>
-              <span>Beautifull Paisage</span>
-            </div>
-          </div>
-          <section class="sssection-3">
-            <div class="row">
-              <div class="col-12 justify-content-center d-flex">
-                <i class="fas fa-map-marked-alt mr-3"></i>
-                <h5 class="h3">Map Directions</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 text-center mx-auto">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.424852453463!2d-0.16074438476307049!3d51.52376697963773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20Marylebone%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sbr!4v1586942576307!5m2!1sen!2sbr"
-                  width="600"
-                  height="450"
-                  frameborder="0"
-                  style="border: 0;"
-                  allowfullscreen=""
-                  aria-hidden="false"
-                  tabindex="0"
-                ></iframe>
-              </div>
-            </div>
-          </section>
-          <section class="sssection-4">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h5 class="h3 text-red">Ready to apply?</h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-9 col-md-6 mx-auto">
-                <form action="" class="d-flex flex-column">
-                  <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="first-name"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="name@email.com"
-                      required
-                    />
-                    <small class="formt-text text-muted"
-                      >We will never share your data</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="conf-password">Conrfirm Your Password</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="conf-password"
-                      required
-                    />
-                  </div>
-                  <button class="btn justify-self-center" type="submit">
-                    I want my dream house
-                  </button>
-                </form>
-              </div>
-            </div>
-          </section>
-        </section>
         <footer class="footer">
           <div
             class="row row-1 mt-5 justify-content-around flex-nowrap justify-content-md-center"
