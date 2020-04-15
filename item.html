@@ -29,11 +29,21 @@
           class="navbar navbar-expand-md position-fixed w-100 flex-column flex-md-row justify-content-between"
         >
           <div class="nav-left">
-            <a href="#"> <i class="fas fa-search"></i></a>
-            <a href="#" class="navbar-brand">Houses for rent</a>
+            <a href="#" class="navbar-brand">
+              <img src="./images/logo.svg" alt=""
+            /></a>
+            <a href="#" class="navbar-brand">Dream Home</a>
           </div>
           <div class="nav-right">
             <ul class="navbar-nav flex-row w-100">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link"
+                  ><i class="far fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link hidden">Home</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
               </li>
@@ -47,7 +57,7 @@
                   >
                     Houses
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark">Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -62,11 +72,11 @@
                   <button
                     class="btn btn-secondary dropdown-toggle border-0 hidden"
                     data-toggle="dropdown"
-                    id="dropB"
+                    id="dropB2"
                   >
                     Condos
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark"> Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -87,7 +97,7 @@
                 ></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hidden">Sign-up</a>
+                <a href="./sign-up.html" class="nav-link hidden">Sign-up</a>
               </li>
             </ul>
           </div>
@@ -333,9 +343,9 @@
               class="col-md-4 mb-3 col-12 d-flex text-center align-items-center flex-column"
             >
               <h5 class="h6 position-relative sub-icon-t">
-                <div class="sub-icon d-block d-md-none">
+                <span class="sub-icon d-block d-md-none">
                   <i class="fas fa-map-marker-alt border-0"></i>
-                </div>
+                </span>
                 Subscribe
               </h5>
               <div class="input-group">
@@ -355,9 +365,9 @@
                 class="font-weight-bold d-flex justify-content-center i-link"
               >
                 <h5 class="h6 position-relative">
-                  <div class="icon d-none d-md-block">
+                  <span class="icon d-none d-md-block">
                     <i class="fas fa-map-marker-alt border-0"></i>
-                  </div>
+                  </span>
                   Contact
                 </h5></a
               >
@@ -375,7 +385,7 @@
               </p>
             </div>
           </div>
-          <div class="row social-links justify-content-between">
+          <div class="row social-links py-2 justify-content-between">
             <div class="left">
               <a href="#" class="align-text-top"
                 ><i

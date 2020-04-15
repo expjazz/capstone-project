@@ -28,11 +28,21 @@
           class="navbar navbar-expand-md position-fixed w-100 flex-column flex-md-row justify-content-between"
         >
           <div class="nav-left">
-            <a href="#"> <i class="fas fa-search"></i></a>
-            <a href="#" class="navbar-brand">Houses for rent</a>
+            <a href="#" class="navbar-brand">
+              <img src="./images/logo.svg" alt=""
+            /></a>
+            <a href="#" class="navbar-brand">Dream Home</a>
           </div>
           <div class="nav-right">
             <ul class="navbar-nav flex-row w-100">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link"
+                  ><i class="far fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link hidden">Home</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
               </li>
@@ -46,7 +56,7 @@
                   >
                     Houses
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark">Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -61,11 +71,11 @@
                   <button
                     class="btn btn-secondary dropdown-toggle border-0 hidden"
                     data-toggle="dropdown"
-                    id="dropB"
+                    id="dropB2"
                   >
                     Condos
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark"> Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -86,7 +96,7 @@
                 ></a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link hidden">Sign-up</a>
+                <a href="./sign-up.html" class="nav-link hidden">Sign-up</a>
               </li>
             </ul>
           </div>
@@ -96,7 +106,8 @@
         <div class="row">
           <div class="col-12">
             <div class="search-words text-center">
-              Filter By Name, Grade Level, Type, Gender, Age:-
+              Filter By Bathrooms, Square Meters, Pets Allowed, Garage Space,
+              Price:
             </div>
             <div class="buttons bt-top text-center">
               <button class="btn" id="b1">House</button>
@@ -107,15 +118,15 @@
             >
               <label class="item-1" for="city">
                 City
-                <input type="text" class="form-control" />
+                <input type="text" id="city" class="form-control" />
               </label>
-              <label class="item-2" for="city">
+              <label class="item-2" for="hood">
                 Neighborhood
-                <input type="text" class="form-control" />
+                <input type="text" id="hood" class="form-control" />
               </label>
               <label class="item-3" for="bedrooms"
                 >Bedrooms
-                <select name="" id="bedrooms" class="custom-select">
+                <select id="bedrooms" class="custom-select">
                   <option value="" class="selected">Choose...</option>
                   <option value="">One</option>
                   <option value="">One</option>
@@ -125,7 +136,7 @@
               >
               <label class="item-4" for="price-range"
                 >Price
-                <select name="" id="price-range" class="custom-select">
+                <select id="price-range" class="custom-select">
                   <option value="" class="selected">Choose...</option>
                   <option value="">$10000</option>
                   <option value="">$10000</option>
@@ -140,7 +151,7 @@
             >
               <label for="baths" class="item-5"
                 >Bathrooms
-                <select name="" id="baths" class="custom-select">
+                <select id="baths" class="custom-select">
                   <option value="" class="selected">Choose</option>
                   <option value="">One</option>
                   <option value="">Two</option>
@@ -148,7 +159,7 @@
               </label>
               <label for="pool-area" class="item-6">
                 Pool Area
-                <select name="" id="pool-area" class="custom-select">
+                <select id="pool-area" class="custom-select">
                   <option value="" class="selected">Choose</option>
                   <option value="">Yes</option>
                   <option value="">No</option>
@@ -157,7 +168,7 @@
 
               <label for="pets" class="item-7"
                 >Pets allowed
-                <select name="" id="pets" class="custom-select">
+                <select id="pets" class="custom-select">
                   <option value="" class="selected">Choose...</option>
                   <option value="">One</option>
                   <option value="">One</option>
@@ -167,7 +178,7 @@
               >
               <label for="square-meters" class="item-8"
                 >Square-Meters
-                <select name="" id="square-meters" class="custom-select">
+                <select id="square-meters" class="custom-select">
                   <option value="" class="selected">Choose...</option>
                   <option value="">$10000</option>
                   <option value="">$10000</option>
@@ -177,23 +188,25 @@
                 </select></label
               >
             </div>
-            <div class="buttons bottom-bt text-center">
-              <button class="btn b1">Search</button>
-              <button class="btn b2">Clear filters</button>
-            </div>
+            <form action="#search" class="form-group">
+              <div class="buttons bottom-bt mt-3 text-center">
+                <button class="btn b1">Search</button>
+                <button class="btn b2">Clear filters</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
       <div class="ssection-2">
         <div class="row px-5">
           <div class="col-12">
-            <h5 class="h4 my-3 text-red text-center">
+            <h5 class="h4 my-3 text-red text-center" id="search">
               Search Results Found 6 Houses
             </h5>
           </div>
           <div class="col-lg-4 col-md-6 col-12">
             <div class="card border-0">
-              <a href="#">
+              <a href="./item.html">
                 <img src="./images/search1.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
@@ -210,8 +223,8 @@
               </div>
             </div>
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search2.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -229,8 +242,8 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12">
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search3.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -246,8 +259,8 @@
               </div>
             </div>
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search4.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -265,8 +278,8 @@
           </div>
           <div class="col-lg-4 d-md-none d-lg-block col-12">
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search5.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -282,8 +295,8 @@
               </div>
             </div>
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search6.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -303,8 +316,8 @@
         <div class="row d-none d-md-flex d-lg-none px-5">
           <div class="col-md-6">
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search5.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -322,8 +335,8 @@
           </div>
           <div class="col-md-6">
             <div class="card border-0">
-              <a href="#">
-                <img src="./images/search1.jpg" alt="" class="card-img-top" />
+              <a href="./item.html">
+                <img src="./images/search6.jpg" alt="" class="card-img-top" />
               </a>
               <div class="card-body">
                 <div class="bottom d-flex justify-content-between">
@@ -384,9 +397,9 @@
             class="col-md-4 mb-3 col-12 d-flex text-center align-items-center flex-column"
           >
             <h5 class="h6 position-relative sub-icon-t">
-              <div class="sub-icon d-block d-md-none">
+              <span class="sub-icon d-block d-md-none">
                 <i class="fas fa-map-marker-alt border-0"></i>
-              </div>
+              </span>
               Subscribe
             </h5>
             <div class="input-group">
@@ -406,9 +419,9 @@
               class="font-weight-bold d-flex justify-content-center i-link"
             >
               <h5 class="h6 position-relative">
-                <div class="icon d-none d-md-block">
+                <span class="icon d-none d-md-block">
                   <i class="fas fa-map-marker-alt border-0"></i>
-                </div>
+                </span>
                 Contact
               </h5></a
             >
@@ -426,7 +439,7 @@
             </p>
           </div>
         </div>
-        <div class="row social-links justify-content-between">
+        <div class="row social-links py-2 justify-content-between">
           <div class="left">
             <a href="#" class="align-text-top"
               ><i

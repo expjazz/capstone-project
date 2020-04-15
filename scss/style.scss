@@ -20,6 +20,12 @@ body {
   background: $dark-red;
   color: white;
   z-index: 5;
+  .nav-left img {
+    width: 50px;
+    height: 50px;
+    margin-top: -27px;
+  }
+
   a,
   button {
     color: white;
@@ -110,7 +116,8 @@ svg {
 
 .section-3 {
   .item {
-    padding: 0 10px;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
     margin: auto 0;
 
     button {
@@ -261,7 +268,8 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 40px 0;
+    margin: 19px 0;
+    padding: 0 40px;
 
     label {
       margin: 0 10px;
@@ -430,67 +438,71 @@ footer {
   }
   .jumbotron {
     padding-top: 10rem !important;
-  }
-  .section-3 .item {
-    flex-direction: column;
-    align-items: center;
-    .img {
-      order: -3;
-      img {
-        height: 183px;
-        width: 246px;
-      }
+    .title {
+      font-size: 42px;
+      padding-bottom: 41px;
     }
   }
-  .section-4 .card img {
-    width: 65% !important;
+}
+.section-3 .item {
+  flex-direction: column;
+  align-items: center;
+  .img {
+    order: -3;
+    img {
+      height: 183px;
+      width: 246px;
+    }
+  }
+}
+.section-4 .card img {
+  width: 65% !important;
+}
+
+.footer ul {
+  border: none !important;
+}
+
+.icon {
+  top: 59px;
+  left: -120px;
+}
+
+.sub-icon {
+  right: 5px !important;
+  top: -194px !important;
+}
+
+.ssection-1 {
+  margin-top: 40px;
+}
+.input-groups {
+  .item-1 {
+    width: 80%;
+  }
+  .item-2 {
+    width: 80%;
+  }
+  .item-3 {
+    width: 80%;
+  }
+  .item-4 {
+    width: 80%;
   }
 
-  .footer ul {
-    border: none !important;
+  .item-5 {
+    width: 80%;
   }
-
-  .icon {
-    top: 59px;
-    left: -120px;
+  .item-6 {
+    width: 80%;
   }
-
-  .sub-icon {
-    right: 5px !important;
-    top: -194px !important;
+  .item-7 {
+    width: 80%;
   }
-
-  .ssection-1 {
-    margin-top: 40px;
+  .item-8 {
+    width: 80%;
   }
-  .input-groups {
-    .item-1 {
-      width: 80%;
-    }
-    .item-2 {
-      width: 80%;
-    }
-    .item-3 {
-      width: 80%;
-    }
-    .item-4 {
-      width: 80%;
-    }
-
-    .item-5 {
-      width: 80%;
-    }
-    .item-6 {
-      width: 80%;
-    }
-    .item-7 {
-      width: 80%;
-    }
-    .item-8 {
-      width: 80%;
-    }
-  }
-  .sssection-2 .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+}
+.sssection-2 .grid {
+  grid-template-columns: repeat(2, 1fr);
 }
