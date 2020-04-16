@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/expjazz/capstone-project/1d49ac26138c5310c283ae23a366e2ad43b4ff9d/index.html)
+[Live Demo Link](https://rawcdn.githack.com/expjazz/capstone-project/fb04ca40a433070ae0122e6d0038399ff69e69a8/index.html)
 
 ## Video Description
 

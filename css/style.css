@@ -643,4 +643,8 @@ footer .social-links {
     padding-bottom: 50px;
     margin-top: 40px;
   }
+
+  .wrapper-title-sm h5 {
+    font-size: 20px !important;
+  }
 }
