@@ -77,7 +77,7 @@ footer a {
       rgba(27, 3, 1, 0.253) 40%,
       rgba(251, 66, 38, 0) 100%
     ),
-    url(/images/backmain.jpg);
+    url("../images/backmain.jpg");
   background-size: cover;
   height: 490px;
 }
@@ -213,8 +213,8 @@ footer .sub-icon-t .sub-icon svg {
   border-radius: 50%;
   font-size: 2rem;
   padding: 7px;
-  -webkit-transition-property: background;
-  transition-property: background;
+  -webkit-transition-property: color border-color;
+  transition-property: color border-color;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
@@ -238,7 +238,8 @@ footer .sub-icon-t .sub-icon svg {
 }
 
 .section-4 .card .bottom svg:hover {
-  background: rgba(168, 163, 163, 0.705);
+  color: red;
+  border-color: red;
 }
 
 footer {
@@ -540,6 +541,10 @@ footer .social-links {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-left {
+    margin-left: -33px;
+  }
+
   .nav-right svg {
     margin-right: 30px;
   }

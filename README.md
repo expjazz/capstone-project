@@ -16,7 +16,13 @@
 
 ## Live Demo
 
-[Live Demo Link](https://expjazz.github.io/capstone-project/)
+[Live Demo Link](https://rawcdn.githack.com/expjazz/capstone-project/56bb72cc67c5637c2444793043cb6cc978c8d50e/index.html)
+
+## Video Description
+
+- Here is a brief video explaining the features of the project.
+
+[Video](https://www.loom.com/share/b7e76743e7e74e339bd414b1b2f12414)
 
 ### Prerequisites
 
