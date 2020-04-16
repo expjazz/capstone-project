@@ -469,7 +469,7 @@ footer ul {
   background: #dc3545;
   border-top-left-radius: 250px;
   border-bottom-left-radius: 250px;
-  padding: 101px;
+  padding: 60px 79px;
   margin-right: 59px;
 }
 
@@ -493,6 +493,35 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -106px;
+}
+
+.wrapper .img-logo img {
+  height: 161px;
+  -webkit-animation-name: up-down;
+          animation-name: up-down;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes up-down {
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -565,9 +594,14 @@ footer ul {
   .input-groups .item-8 {
     width: 80%;
   }
-  .input-groups .sssection-2 .grid {
+  .sssection-2 .grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .color-bg {
+    padding-top: 14px;
+    padding-bottom: 50px;
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

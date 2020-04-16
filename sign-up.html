@@ -31,11 +31,21 @@
           class="navbar navbar-expand-md position-fixed w-100 flex-column flex-md-row justify-content-between"
         >
           <div class="nav-left">
-            <a href="#"> <i class="fas fa-search"></i></a>
-            <a href="#" class="navbar-brand">Houses for rent</a>
+            <a href="#" class="navbar-brand">
+              <img src="./images/logo.svg" alt=""
+            /></a>
+            <a href="#" class="navbar-brand">Dream Home</a>
           </div>
           <div class="nav-right">
             <ul class="navbar-nav flex-row w-100">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link"
+                  ><i class="far fa-user"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link hidden">Home</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
               </li>
@@ -49,7 +59,7 @@
                   >
                     Houses
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark">Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -64,11 +74,11 @@
                   <button
                     class="btn btn-secondary dropdown-toggle border-0 hidden"
                     data-toggle="dropdown"
-                    id="dropB"
+                    id="dropB2"
                   >
                     Condos
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="drobB">
+                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item text-dark"> Buy</a>
                     <a href="#" class="dropdown-item text-dark">Rent</a>
                   </div>
@@ -101,7 +111,7 @@
             <div
               class="col 12 order-10 order-md-1 col-md-3 d-flex flex-column align-items-center justify-content-center"
             >
-              <div class="img-logo">
+              <div class="img-logo d-none d-md-block text-center">
                 <img src="./images/logo.svg" alt="" />
 
                 <h5 class="h3 d-none d-md-block text-red">Welcome</h5>
@@ -110,59 +120,70 @@
             </div>
             <div class="col-12 order-2 col-md-9">
               <div class="color-bg">
-                <div class="row">
+                <div class="row flex-column align-content-center">
+                  <h5 class="h3 d-block d-md-none text-white mx-auto">
+                    Welcome
+                  </h5>
                   <h5 class="h3">Fill the form to sing up</h5>
                 </div>
                 <div class="row">
                   <div class="col-12">
-                    <div class="form-group">
-                      <label for="first-name">First Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="first-name"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="username">Username</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="username"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        required
-                      />
-                      <small class="form-text text-white">
-                        We will never share your data
-                      </small>
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Password</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="password"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="conf-pass">Confirm your password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="conf-pass"
-                        required
-                      />
-                    </div>
+                    <form action="./index.html">
+                      <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="first-name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="username"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          required
+                        />
+                        <small class="form-text text-white">
+                          We will never share your data
+                        </small>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="password"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="conf-pass">Confirm your password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="conf-pass"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn d-block d-md-none bg-light text-red mx-auto"
+                      >
+                        Login
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -276,7 +297,7 @@
               ></a>
             </div>
             <div class="right">
-              <a href="#">BUSCAR ACADEMIAS 2020. ALL RIGHTS RESERVED.</a>
+              <a href="#">DREAM HOUSE 2020. ALL RIGHTS RESERVED.</a>
             </div>
           </div>
         </footer>

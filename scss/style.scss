@@ -426,7 +426,7 @@ footer {
   background: #dc3545;
   border-top-left-radius: 250px;
   border-bottom-left-radius: 250px;
-  padding: 101px;
+  padding: 60px 79px;
   margin-right: 59px;
 }
 
@@ -439,6 +439,20 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: -106px;
+    img {
+      height: 161px;
+      animation-name: up-down;
+      animation-duration: 3s;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes up-down {
+      50% {
+        transform: translateY(-30px);
+      }
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -513,9 +527,13 @@ footer {
     .item-8 {
       width: 80%;
     }
-
-    .sssection-2 .grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  }
+  .sssection-2 .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .color-bg {
+    padding-top: 14px;
+    padding-bottom: 50px;
+    margin-top: 40px;
   }
 }
