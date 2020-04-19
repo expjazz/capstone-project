@@ -70,8 +70,7 @@ footer a {
 }
 
 .jumbotron {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       -8deg,
       rgba(253, 253, 253, 0) 0%,
       rgba(27, 3, 1, 0.253) 40%,
@@ -447,10 +446,10 @@ footer .social-links {
 .sssection-2 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 40px;
-  margin: 90px auto;
+  margin: 50px auto;
   grid-gap: 20px;
 }
 
@@ -491,11 +490,6 @@ footer .social-links {
 
   .svg-cont {
     margin-left: -30px;
-  }
-
-  .sssection-2 .grid {
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -634,8 +628,8 @@ footer .social-links {
   }
 
   .sssection-2 .grid {
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .color-bg {
