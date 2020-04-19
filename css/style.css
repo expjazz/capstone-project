@@ -70,7 +70,8 @@ footer a {
 }
 
 .jumbotron {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       -8deg,
       rgba(253, 253, 253, 0) 0%,
       rgba(27, 3, 1, 0.253) 40%,
